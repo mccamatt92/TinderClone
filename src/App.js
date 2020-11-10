@@ -1,11 +1,14 @@
 import './App.css';
-import Header from './Header';
+import Cards from './Components/Cards/Cards';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
+         {/*Header */}
     <Header/>
-      {/*Header */}
+    <Cards/>
+    
       {/*Tindercards */}
       {/*SwipeButtons */}
     </div>
