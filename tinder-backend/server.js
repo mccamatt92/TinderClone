@@ -4,7 +4,7 @@ import cards from './Models/dbCards.js'
 import Cors from 'cors'
 
 const app = express()
-var port = server.listen(process.env.PORT || 3000);
+var port = process.env.PORT || 8080;
 
 const connection_url=`mongodb+srv://MatthiasAdmin:o8E0IlQmHk9HjQVF@cluster0.iquon.mongodb.net/tinderdb?retryWrites=true&w=majority`
 
@@ -46,4 +46,4 @@ app.get('/tinder/card',(req,res)=>{
 
 
 app.get('/', (req, res) => res.status(200).send('Hello World!'))
-app.listen("PORT", port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port)
